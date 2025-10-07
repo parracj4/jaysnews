@@ -2,3 +2,7 @@ name = "jaysnews"
 compatibility_flags = ["nodejs_compat"]
 compatibility_date = "2024-01-01"
 pages_build_output_dir = ".vercel/output/static"
+
+[env.production.vars]
+NEXT_PUBLIC_SUPABASE_URL = "https://apchrbhvobtjycuiixfs.supabase.co"
+NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFwY2hyYmh2b2J0anljdWlpeGZzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk3ODQxMDUsImV4cCI6MjA3NTM2MDEwNX0.TIL5hqqiEOth1mwIGqZIAw9aEArhznhQmN6HgBG3fGk"
