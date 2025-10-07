@@ -30,8 +30,7 @@ export default function ArticleCard({ article, index }: ArticleCardProps) {
       style={{ opacity, scale }}
       className="glass-card rounded-2xl overflow-hidden group"
     >
-      
-        <a href={article.source_url}
+    <a href={article.source_url}
         target="_blank"
         rel="noopener noreferrer"
         className="block"
@@ -80,3 +79,4 @@ export default function ArticleCard({ article, index }: ArticleCardProps) {
               Read Full Article
 
               <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
