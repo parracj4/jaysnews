@@ -31,7 +31,7 @@ export default function ArticleCard({ article, index }: ArticleCardProps) {
       className="glass-card rounded-2xl overflow-hidden group"
     >
       
-        href={article.source_url}
+        <a href={article.source_url}
         target="_blank"
         rel="noopener noreferrer"
         className="block"
@@ -78,4 +78,5 @@ export default function ArticleCard({ article, index }: ArticleCardProps) {
           <div className="flex items-center justify-between">
             <span className="inline-flex items-center text-purple-700 font-semibold group-hover:text-purple-900 transition-colors">
               Read Full Article
+
               <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
