@@ -20,4 +20,5 @@ Modern news aggregation platform for Mason County, WV.
 
 ## License
 
-Private - All rights reserved
+
+Private - All rights reserved 
