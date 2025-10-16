@@ -32,7 +32,7 @@ export default function ArticleCard({ article, index }: ArticleCardProps) {
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.95, 1.02, 0.95]);
   
   // New 3D rotation effect (20 degrees)
-  const rotateX = useTransform(scrollYProgress, [0, 0.5, 1], [20, 0, -20]);
+  const rotateX = useTransform(scrollYProgress, [0, 0.5, 1], [15, 0, -15]);
   
   // Glass reflection gradient position
   const gradientPosition = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
@@ -53,7 +53,7 @@ export default function ArticleCard({ article, index }: ArticleCardProps) {
         
         {/* Logo watermark */}
         <div 
-          className="absolute inset-0 opacity-[0.04] pointer-events-none z-0"
+          className="absolute inset-0 opacity-[0.15] pointer-events-none z-0"
           style={{
             backgroundImage: 'url(https://i.imgur.com/mgFP1sl.png)',
             backgroundSize: '60%',
@@ -114,3 +114,4 @@ export default function ArticleCard({ article, index }: ArticleCardProps) {
     </motion.article>
   );
 }
+
